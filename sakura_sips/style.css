@@ -1,0 +1,106 @@
+body {
+    font-size: 16px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 200;
+    background-color: #F9F5F6;
+    display: grid;
+    text-align: center;
+    margin-inline: 0;
+    margin-block: 0;
+}
+
+h1, h2 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 300;
+}
+
+table, tr, td, th, caption {
+    border-inline: 1px solid black;
+    border-block: 1px solid black;
+}
+
+td:nth-child(3n+1) {
+    font-weight: bold;
+}
+
+aside {
+    font-style: italic;
+    margin-block-end: .5rem;
+}
+
+#intro h1 {
+    margin-block-end: .25rem;
+}
+
+hr {
+    margin-inline-start: 0.05em;
+    margin-inline-end: 0.05em;
+}
+
+a {
+    color: #F2BED1;
+}
+
+a:hover, a:focus {
+    color: palevioletred;
+}
+
+a:visited {
+    color: palevioletred;
+}
+
+input, textarea, button, select{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 200;
+}
+
+input:focus, textarea:focus, button:focus, select:focus {
+    outline: 2px solid palevioletred;
+}
+
+button:hover {
+    background-color: lavenderblush;
+    border-inline: 2px solid lightpink;
+    border-block: 2px solid lightpink;
+}
+
+nav {
+    position: sticky;
+    inset-block-start: 0;
+    background-color: #F8E8EE;
+    z-index: 1;
+}
+
+nav ul li {
+    display: inline;
+    margin-block: 0;
+    margin-inline: .25rem;
+    line-height: 1.5rem;
+}
+
+
+form > p label {
+    display: block;
+    margin-inline: .25rem;
+    margin-block: .25rem;
+}
+
+#menu {
+    display: grid;
+    grid-template-areas:    
+        "h2"
+        "juices"
+        "smoothies"
+        "other-drinks"
+        "snacks";
+    justify-content: space-evenly;
+    grid-gap: .5rem;
+}
+
+.menu-header {
+    grid-area: h2;
+}
+
+#address {
+    margin-block-end: 15px;
+}
