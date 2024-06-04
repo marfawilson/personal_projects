@@ -3,7 +3,7 @@ export default function NavBar() {
         <nav>
             <div className="nav-center">
                 <h4>Color Flipper</h4>
-                <ul className="navlinks">
+                <ul className="nav-links">
                     <li><a href="">Simple</a></li>
                     <li><a href="">Hex</a></li>
                 </ul>
